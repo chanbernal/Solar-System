@@ -1,0 +1,191 @@
+html {
+    background-image: url(jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+*{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    font-family: 'Audiowide', cursive;
+}
+img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+img.sun{
+    width: 5rem;
+    height: 5rem;
+    filter: drop-shadow(0 0 5rem yellow);
+}
+
+img.alien{
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    width: 60rem;
+    height: 60rem;
+    background-color: rgba(0   , 0, 0, .3);
+    border-radius: 50%;
+    top: 50px;
+    filter: drop-shadow(0 0 0.75rem gray);
+}
+
+
+
+.sun-orbit{
+    /*border: 5px white dotted;*/
+    border-radius: 50%;
+    position: absolute;
+    top: 46%;
+    left: 45.7%;
+}
+
+.mercury-orbit{
+    border: 1px white dotted;
+    border-radius: 50%;
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    animation: orbit 4s infinite linear;
+}
+
+.mercury-orbit img{
+    position: absolute;
+    top: 0%;
+    left: 3%;
+}
+
+.venus-orbit{
+    border: 1px white dotted;
+    border-radius: 50%;
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    animation: orbit 8s infinite linear;
+}
+
+.venus-orbit img{
+    position: absolute;
+    top: 0%;
+    left: 12%;
+}
+
+.venus-orbit img{
+    position: absolute;
+    top: 81%;
+    left: 12%;
+}
+
+.earth-orbit{
+    border: 1px white dotted;
+    border-radius: 50%;
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    animation: orbit 13s infinite linear;
+}
+
+.earth-orbit img{
+    position: absolute;
+    top: -5%;
+    right: 35%;
+}
+
+.mars-orbit{
+    border: 1px white dotted;
+    border-radius: 50%;
+    position: absolute;
+    width: 25rem;
+    height: 25rem;
+    animation: orbit 25s infinite linear;
+}
+
+.mars-orbit img{
+    position: absolute;
+    top: 93%;
+    right: 35%;
+}
+
+.jupiter-orbit{
+    border: 1px white dotted;
+    border-radius: 50%;
+    position: absolute;
+    width: 30rem;
+    height: 30rem;
+    animation: orbit 4s infinite linear;
+}
+
+.jupiter-orbit img{
+    position: absolute;
+    top: 50%;
+    right: -5%;
+}
+
+.saturn-orbit{
+    border: 1px white dotted;
+    border-radius: 50%;
+    position: absolute;
+    width: 35rem;
+    height: 35rem;
+    animation: orbit 28s infinite linear;
+}
+
+.saturn-orbit img{
+    position: absolute;
+    top: 20%;
+    right: 3%;
+}
+
+.uranus-orbit{
+    border: 1px white dotted;
+    border-radius: 50%;
+    position: absolute;
+    width: 40rem;
+    height: 40rem;
+    animation: orbit 8s infinite linear;
+}
+
+.uranus-orbit img{
+    position: absolute;
+    top: -3%;
+    right: 50%;
+}
+
+.neptune-orbit{
+    border: 1px white dotted;
+    border-radius: 50%;
+    position: absolute;
+    width: 45em;
+    height: 45rem;
+    animation: orbit 13s infinite linear;
+}
+
+.neptune-orbit img{
+    position: absolute;
+    top: 50%;
+    left: -3%;
+}
+
+@keyframes orbit{
+    100%{
+        transform: rotate(360deg);
+    }
+}
